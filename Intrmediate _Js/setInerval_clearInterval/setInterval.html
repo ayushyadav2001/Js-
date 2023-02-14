@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval & clearInterval</title>
+</head>
+<body id="body-tag">
+    <h2>Set Interval & clear Interval</h2>
+    <div id="textArea">Time in Seconds <span id="seconds"></span></div>
+    <script>
+        function display(empName,empDepartment){
+            console.log("Name is : "+empName +" & Department is : "+empDepartment);
+        }
+
+        // display("Ayush","CSE");
+        // setTimeout(display,4000);  //Take first input function name and second input for time here 4000=4sec
+        //Passing parameters to display function
+        // setInterval(display,2000,"Ayush","Computer Science"); //  after every 2 sec it will print
+
+        // function to change body tag background color]
+        let count=0;
+        setInterval(function(){
+            count++;
+            document.querySelector("#textArea").innerHTML=count;
+            let color=`#${count}00${count}00`
+            document.querySelector("#textArea").style.backgroundColor=color;
+
+        },1000);
+        // setInterval(function(){
+        //     document.querySelector("#body-tag").style.backgroundColor="yellow";
+
+        // },1000);
+        //  if we have logic like send otp and otp should expire in 1 minute then
+        //  we use setTimeOut to use and if user input otp within 30sec then we need to cancell settTimeOut so the otp can not expire
+        // execute in a certain time and time is in mili seconds we use clearTimeOut to cancell 
+        let timeIntervalID=setInterval(display,4000,"Vikas","Computer Science");
+        console.log(`Time Interval Id is : ${timeIntervalID}`);
+        //  let cancell the 10s time out with the timeout id
+        clearTimeout(timeIntervalID);
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alert prompt confirm parse in javascript</title>
+</head>
+<body>
+    <h2>alert prompt confirm parse in javascript</h2>
+
+    <script>
+
+        // prompt return the input value
+        function addNumber(){
+            let num1= prompt("Enter Value of First Number" ,"2");//with deafault value of 2
+            num1=parseInt(num1);// convert string to number
+            let num2= prompt("Enter Value of Second Number","5");//with deafault value of 5
+            num2=parseInt(num2);// convert string to number
+            // console.log(num1+num2);
+            // let result =eval(num1+num2); not evaluateing and is not a good practise
+            // we need to convert the string into number
+            let result=num1+num2;
+            // alert does not return the value
+            alert(`The Sum of ${num1} and ${num2} is ${result}`);
+
+        }
+        // addNumber();
+        function deleteCart(){
+            let input=confirm("Are You Sure want to delete the cart!");
+            if(input){
+                alert("Cart has been Deleted Successfully!");
+            }
+            else{
+                alert("Cart can't Delete!");
+            }
+        }
+        deleteCart();
+
+    </script>
+</body>
+</html>

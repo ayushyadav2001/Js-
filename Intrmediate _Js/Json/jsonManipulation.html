@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Manipulation</title>
+</head>
+<body>
+    <h2>JSON stands for Javascript Objects Notation</h2>
+    <p>JSON is used for exchangeing data over the Network/internet</p>
+    <script>
+        let empData={
+            "name":"Ayush",
+            "department":"Development",
+            "experiance":"1 Year",
+            address:{"city":"Greater Noida","state":"UP"},
+        };
+        console.log(empData);
+        console.log(empData.name);
+        console.log(empData.department);
+        console.log(empData.experiance);
+        console.log(empData.address.city);
+        console.log(empData.address.state);
+        let empStr=JSON.stringify(empData); // convert the JSON data into String
+        console.log(empStr);
+        let jsonObj=JSON.parse(empStr); // convert back valid JSON string data into JSON object
+        console.log(jsonObj);
+    </script>
+</body>
+</html>

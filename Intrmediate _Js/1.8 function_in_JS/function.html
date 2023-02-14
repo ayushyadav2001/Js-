@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function in JS</title>
+</head>
+<body>
+    <h2>Function in JS</h2>
+    <ul>
+        <li>Function helps us to wrtie same code over and over again</li>
+        <li>Function is a reusable code written once and as many as we want</li>
+        <li>Function start with function keyword</li>
+        <li>function can take parameter or they can be non parameter</li>
+        <li>Function may or may not have return type</li>
+        <li>Code inside Function executed once when function is called  </li>
+    </ul>
+
+    <script>
+
+        //Defineing of a Number
+        function addNumber(){
+            console.log(5+7);
+        }
+        addNumber(); // Calling a function
+        // Function with 22 paramenters
+        // function AddTwonumber( a,b){
+        //     return a+b;
+        // }
+        function AddTwonumber( a,b){
+            var result=a+b;
+            console.log(result);
+        }
+
+
+        var a=AddTwonumber(5,5);
+        console.log(a);
+        function AddtwoNumberWithDefaultValue(num1,num2=5){
+            return num1+num2;
+        }
+        //  var b=AddtwoNumberWithDefaultValue(22);
+         var b=AddtwoNumberWithDefaultValue(22,20);
+         console.log(b);
+    </script>
+</body>
+</html>

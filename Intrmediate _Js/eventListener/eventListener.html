@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventListener</title>
+</head>
+<body id="bodyElement">
+    <button id="magic" onclick="Magic()" >Magic</button>
+    <h2>Event Listener</h2>
+    <div id="header" class="layout">
+        <h2 id="header-text" onmouseover="changeColor()" onmouseout="changeColor()">Header Section</h2>
+        <input type="text" id="Header_change_text" placeholder="Enter text to change Header">
+        <!-- <button id="header-button" onclick="changeColor()">Change color</button> -->
+        <button id="header-button" onclick="changeText()">Change color</button>
+
+    </div>
+    <div id="main" class="layout">
+        <section id="left">
+            <ul class="left-menu">
+                <li>Products</li>
+                <li>Categories</li>
+                <li>Orders</li>
+            </ul>
+        </section>
+        <section id="center"> 
+            <h3 id="someT">Hello World</h3>
+            <!-- <input type="text" id="some-text-input" placeholder=" Enter to change Hello world"> -->
+            <input type="text" id="fullName" placeholder="Enter The Name"/>
+        </section>
+        <section id="right"> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus reiciendis mollitia quo laudantium nam, voluptatibus adipisci repellat! Temporibus, molestias! Veritatis tenetur minus nemo distinctio illum odio eaque recusandae consectetur in.</p>
+
+        </section>
+    </div>
+    <div id="footer" class="layout">
+        @all Right reserve
+    </div>
+    
+    <script src="eventListener.js"></script>
+</body>
+</html>

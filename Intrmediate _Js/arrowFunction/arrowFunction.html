@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <h4>Arrow Function are the simple and easy way of writing javascript functionit gives in ES6</h4>
+    
+    <script>
+        // function addTwo(num1,num2){
+        //     return num1+num2;
+        // }
+
+    //    let addTwo= function (num1,num2){
+    //         return num1+num2;
+    //     }
+    //Arrow function in JS
+    // let addTwo=(num1,num2)=>{
+    //         return num1+num2;
+    //     }
+    let addTwo=(num1,num2)=> num1+num2;
+        
+        let result=addTwo(7,7);
+        console.log(result);
+        let squareFunc=(a)=>{
+            return a*a;
+        }
+        let s=squareFunc(5);
+        console.log(s);
+        const greetFunc=()=>console.log("Hello Ayush")
+        greetFunc();
+        // setInterval(function test (){console.log("I am From normal function")},1000);
+        // setInterval(()=>{console.log("I am From =>  function")},1000);
+        // setInterval(()=>console.log("I am From ()=> function"),1000);
+    </script>
+</body>
+</html>
